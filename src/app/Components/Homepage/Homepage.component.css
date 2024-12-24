@@ -1,0 +1,40 @@
+/* Navbar Styling */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #007bff !important;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0056b3 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+
+.container-fluid {
+  padding: 20px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #007bff;
+} 
+
+.navbar-nav .nav-item .nav-link:hover {
+  cursor: pointer;
+}
+

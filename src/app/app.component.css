@@ -1,0 +1,24 @@
+/* Main layout styles */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .body-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-left: 250px; /* To make space for the left menu */
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .body-content {
+      margin-left: 0;
+    }
+  }
+  

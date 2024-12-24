@@ -1,0 +1,13 @@
+<div class="header">
+  <div class="user-actions">
+    <div class="dropdown">
+      <button (click)="toggleDropdown()" class="profile-button">
+        <i class="fas fa-user-circle"></i> My Profile <i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="dropdown-menu" *ngIf="dropdownOpen">
+        <a (click)="viewProfile()">View Profile</a>
+        <a (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>

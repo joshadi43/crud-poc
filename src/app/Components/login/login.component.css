@@ -1,0 +1,100 @@
+/* Container to center the form on the page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the form */
+  form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Styling for the form inputs and labels */
+  div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #4e8bff;
+    background-color: #fff;
+  }
+  
+  /* Error messages */
+  div > div {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Submit button */
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4e8bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #a3c8ff;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #3d7ad6;
+  }
+  
+  /* Link to signup page */
+  .signup {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup a {
+    color: #4e8bff;
+    text-decoration: none;
+  }
+  
+  .signup a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

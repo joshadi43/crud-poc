@@ -1,0 +1,13 @@
+/* Body Content Styling */
+.body-content {
+    padding: 20px;
+    margin-left: 250px; /* To make space for the left menu */
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .body-content {
+      margin-left: 0;
+    }
+  }
+  

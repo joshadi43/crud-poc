@@ -1,0 +1,45 @@
+<div class="login-container">
+  <h1>Hey Techie!</h1>
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <div>
+      <label for="username">Username:</label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        [(ngModel)]="username"
+        #usernameInput="ngModel"
+        required
+        minlength="5"
+      />
+      <div *ngIf="usernameInput.invalid && (usernameInput.dirty || usernameInput.touched)">
+        <div *ngIf="usernameInput.errors?.['required']">Username is required.</div>
+        <div *ngIf="usernameInput.errors?.['minlength']">Username must be at least 5 characters long.</div>
+      </div>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        [(ngModel)]="password"
+        #passwordInput="ngModel"
+        required
+        minlength="8"
+      />
+      <div *ngIf="passwordInput.invalid && (passwordInput.dirty || passwordInput.touched)">
+        <div *ngIf="passwordInput.errors?.['required']">Password is required.</div>
+        <div *ngIf="passwordInput.errors?.['minlength']">Password must be at least 8 characters long.</div>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+
+  <div class="signup">
+    <p>Don't have an account? <a (click)="goToRegister()">Sign up</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="side-navbar" [class.collapsed]="isCollapsed">
+  <div class="left-menu">
+    <!-- Toggle Icon -->
+    <div class="toggle-icon" (click)="toggleMenu()">
+      <i class="material-icons">menu</i>
+    </div>
+
+    <!-- Logo Section -->
+    <a class="logo">
+      <img src="image.png" alt="Logo" />
+    </a>
+
+    <!-- Menu Items -->
+    <ul>
+      <li>
+        <a routerLink="/homepage">
+          <span class="icon">🏠</span>
+          <span class="text" *ngIf="!isCollapsed">Home</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/employees">
+          <span class="icon">📊</span>
+          <span class="text" *ngIf="!isCollapsed">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/settings">
+          <span class="icon">⚙️</span>
+          <span class="text" *ngIf="!isCollapsed">Settings</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
